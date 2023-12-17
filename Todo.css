@@ -185,7 +185,7 @@ button, input[type="button"] {
 .footer
 {
 background-color:#171723;
-margin-top: 25px;
+margin-top: 20px;
 width: 100vw;
 }
 .footercontainer
@@ -204,7 +204,7 @@ justify-content: center;
  text-decoration: none;
  padding: 10px;
  background-color: white;
- margin: 10px;
+ margin: 20px;
  border-radius: 50%;
 }
 .socialicons a i
@@ -236,7 +236,7 @@ justify-content: center;
 .footernav ul li a
 {
     color: white;
-    margin: 20px;
+    margin: 50px;
     text-decoration: none;
     font-size: 1.5em;
     opacity: 0.6;
@@ -249,13 +249,14 @@ justify-content: center;
 .footerbottom
 {
     background-color: #000000;
-    padding: 20px;
+    padding: 7px;
     text-align: center;
     margin-top: auto;
 }
 .footerbottom p
 {
     color: white;
+    margin: 10px;
 }
 .designer
 {
