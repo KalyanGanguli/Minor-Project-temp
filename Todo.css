@@ -9,7 +9,7 @@ body{
     font: var(--fw-normal) var(--base-font) var(--ff-sans);
   background:  no-repeat 0% 0% / 100vw 17rem;   
 
-  background-color:rgb(33, 37, 69);
+  background-color: #171723;
     color: white;
     height: 100vh;
     background-image:url(https://as2.ftcdn.net/v2/jpg/03/20/54/47/1000_F_320544707_YKQ0cZaHnHAhqy2AqggqDkGjP0APSWqr.jpg);
@@ -184,7 +184,7 @@ button, input[type="button"] {
 }
 .footer
 {
-background-color:rgb(29, 29, 29);
+background-color:#171723;
 margin-top: 25px;
 width: 100vw;
 }
