@@ -259,7 +259,7 @@ input[type="button"] {
 
 .footer {
     font-family: 'Roboto Mono';
-    background-color: #171723;
+    background-color: #171723 transparent;
     margin-top: 20px;
     width: 100vw;
 }
