@@ -4,6 +4,7 @@ let addTodoButton = document.getElementById("addTodoButton");
 let saveTodoButton = document.getElementById('saveTodoButton');
 let deleteAll = document.getElementById('clearAll');
 let deleteAllCompletely = document.getElementById('deleteAllbutton');
+let footerEl = document.getElementById('lmao');
 
 function getTodoListFromLocalStorage() {
     let stringified = localStorage.getItem('todoList');
@@ -60,6 +61,9 @@ function onDeleteTodo(todoId) {
         deleteAll.classList.add('d-none');
         deleteAllCompletely.classList.add('d-none');
     }
+    if(todoList.length <= 3){
+        footerEl.classList.add('lmao');
+    }
 }
 
 function createAndAppendTodo(todo) {
@@ -93,6 +97,7 @@ function createAndAppendTodo(todo) {
     labelElement.setAttribute("for", checkboxId);
     labelElement.id = labelId;
     labelElement.classList.add("checkbox-label");
+    labelElement.classList.add("text-left");
     labelElement.textContent = todo.text;
     if (todo.ischecked === true) {
         labelElement.classList.add('checked');
@@ -145,6 +150,9 @@ function onAddTodo() {
         deleteAll.classList.remove('d-none');
         deleteAllCompletely.classList.remove('d-none');
     }
+    if(todoList.length > 3){
+        footerEl.classList.remove('lmao');
+    }
 }
 
 addTodoButton.onclick = function() {
@@ -173,6 +181,7 @@ deleteAll.onclick = function () {
         deleteAll.classList.add('d-none');
         deleteAllCompletely.classList.add('d-none');
     }
+    footerEl.classList.add('lmao');
 };
 
 
@@ -189,5 +198,12 @@ deleteAllCompletely.onclick = function () {
         deleteAll.classList.add('d-none');
         deleteAllCompletely.classList.add('d-none');
     }
+    footerEl.classList.add('lmao');
 };
+function manageEvent(event){
+    if(event.key==="Enter"){
+        event.preventDefault();
+        onAddTodo();
+    }
+}
 });
